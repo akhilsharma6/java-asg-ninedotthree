@@ -39,10 +39,11 @@ class HashMapTest {	// Class HashMap
 
 		Iterator itr = row.iterator();	// Iterator to fetch rows in iteration
 
+		System.out.println("\nEmployee Names");
+		System.out.println("--------------");
 		while (itr.hasNext()){	// hasNext to check if the next row exist
 			Map.Entry me = (Map.Entry)itr.next();	// Map.Entry inner class of Map describes a key/value pair. Next method to fetch row.
-			System.out.print("\nKey " + me.getKey() + " > ");
-			System.out.print(me.getValue());
+			System.out.println(me.getValue());	// Only empnames printed as output
 		}
 	}
 }
